@@ -211,6 +211,8 @@ const getCategoryName = (categoryId) => {
 <style scoped>
 .home {
   padding: 20px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
 }
 
 .section-title {
@@ -226,7 +228,8 @@ const getCategoryName = (categoryId) => {
 
 .section-title p {
   margin: 8px 0 0;
-  color: #666;
+  color: var(--text-color);
+  opacity: 0.7;
   font-size: 14px;
 }
 
@@ -243,9 +246,9 @@ const getCategoryName = (categoryId) => {
 .category-card {
   cursor: pointer;
   transition: all 0.3s;
-  border: 1px solid #ebeef5;
+  border: 1px solid var(--card-border);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--card-bg);
   width: 200px;
   height: 150px;
   display: flex;
@@ -257,6 +260,7 @@ const getCategoryName = (categoryId) => {
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--hover-bg);
 }
 
 .category-card.is-active {
@@ -280,10 +284,10 @@ const getCategoryName = (categoryId) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f7fa;
+  background-color: var(--hover-bg);
   border-radius: 16px;
   transition: all 0.3s;
-  color: #606266;
+  color: var(--text-color);
   margin-bottom: 15px;
 }
 
@@ -317,9 +321,9 @@ const getCategoryName = (categoryId) => {
 .tool-card {
   cursor: pointer;
   transition: all 0.3s;
-  border: 1px solid #ebeef5;
+  border: 1px solid var(--card-border);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--card-bg);
   width: 300px;
   height: 120px;
   position: relative;
@@ -329,6 +333,7 @@ const getCategoryName = (categoryId) => {
 .tool-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--hover-bg);
 }
 
 .tool-content {
@@ -374,7 +379,8 @@ const getCategoryName = (categoryId) => {
 .tool-info p {
   margin: 8px 0;
   font-size: 12px;
-  color: #666;
+  color: var(--text-color);
+  opacity: 0.7;
   line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 2;
